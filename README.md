@@ -1,2 +1,2 @@
-# final-project-chick-fil-A
-final-project-chick-fil-a created by GitHub Classroom
+# Final-Project-Chick-Fil-A
+Final-Project-Chick-Fil-A created by GitHub Classroom
