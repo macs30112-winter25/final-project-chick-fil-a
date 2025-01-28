@@ -1,5 +1,5 @@
 # Spatial Distribution of Open-Source Artificial Intelligence (AI) Research across the United States
-## GroupChick-Fil-A
+## Group Chick-Fil-A
 ### Project Goals
 ### Research Question
 ### Overall findings
