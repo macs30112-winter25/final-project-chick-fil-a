@@ -68,7 +68,7 @@ def save_to_csv(data, filename):
 
 def main():
     topic = "ai"
-    max_repos = 10
+    max_repos = 100
     repos = get_most_starred_repos(topic, max_repos)
     data = []
     for repo in repos.get('items', []):
