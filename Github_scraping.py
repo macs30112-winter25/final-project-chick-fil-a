@@ -10,9 +10,8 @@ import csv
 import time
 import random
 
-# GitHub API settings
 GITHUB_API_URL = "https://api.github.com/search/repositories"
-GITHUB_TOKEN = "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"  # Replace with a GitHub token
+GITHUB_TOKEN = "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"  
 HEADERS = {
     "Authorization": f"token {GITHUB_TOKEN}",
     "Accept": "application/vnd.github+json",
