@@ -11,7 +11,7 @@ This study examines the geographic distribution of open-source AI research in th
 - Baihui Wang
 - Anqi Wei
 ## Data
-- https://github.com/topics/ai: Data on repositories tagged with "AI," sorted by the number of stars, and public user profile information, including location fields. Preliminary tests confirm the availability of sufficient repository and user data for analysis.
+- https://github.com/topics/ai: Data on repositories tagged with "AI," sorted by the number of stars, and public user profile information, including location fields.
 - https://nces.ed.gov/ipeds/use-the-data#SearchExistingData: Data on the number and locations of higher education institutions in the U.S.
 - https://www.bea.gov/; https://www.census.gov/: Data on GDP, population, and other macroeconomic indicators for U.S. cities and states.
 - https://aiindex.stanford.edu/report/: Supplementary insights on AI research trends and regional disparities.
