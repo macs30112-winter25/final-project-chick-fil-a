@@ -5,17 +5,16 @@ This study examines the geographic distribution of open-source AI research in th
 - **Top Contributing Regions**: Which U.S. cities or states contribute the most to AI-related open-source projects?
 - **Role of Economic Development and Higher Education**: How does economic development or the density of higher education institutions explain these geographic patterns?
 - **Comparison with AI Industry Clustering**: Is AI open-source development more geographically decentralized compared to AI companies and R&D centers?
-## Overall findings
 ## Team Member
 - Charlotte Li
 - Baihui Wang
 - Anqi Wei
 ## Data
-- https://github.com/topics/ai: Data on repositories tagged with "AI," sorted by the number of stars, and public user profile information, including location fields.
-- https://nces.ed.gov/ipeds/use-the-data#SearchExistingData: Data on the number and locations of higher education institutions in the U.S.
-- https://www.bea.gov/; https://www.census.gov/: Data on GDP, population, and other macroeconomic indicators for U.S. cities and states.
-- https://aiindex.stanford.edu/report/: Supplementary insights on AI research trends and regional disparities.
-## Library
+- [GitHub (AI Repositories)](https://github.com/topics/ai): Data on repositories tagged with "AI," sorted by the number of stars, including public user profile information with location fields. We will use the top 100 most-starred repositories, covering approximately 1,514 contributors and their locations.
+- [World Higher Education Database (WHED)](https://www.whed.net/home.php): Provides authoritative information on over 21,000 accredited higher education institutions across 180+ countries, with the latest data from 2024.
+- [World Bank (World Development Indicators)](https://databank.worldbank.org/): Global data on GDP, economic growth, and development indicators for over 190 countries, spanning from 2020–2024.
+- [Stanford AI Index Report](https://aiindex.stanford.edu/report/): Supplementary insights on AI research trends and regional disparities, using the most recent 2023 report.
+- [World Bank Internet Usage Data](https://data.worldbank.org/indicator/IT.NET.USER.ZS): Data on internet penetration rates as a percentage of the population, updated annually, covering data from 2020–2024.
 ## Responsibility
 - Charlotte Li: Develop and execute the GitHub data scraping script, including API access, repository information collection, and user location data extraction.
 - Baihui Wang: Assist in data scraping, perform initial data cleaning and deduplication, aggregate macroeconomic data, and standardize geographic names. Contribute to data visualization and map creation.
