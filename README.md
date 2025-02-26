@@ -5,9 +5,14 @@ This study examines the geographic distribution of open-source AI research in th
 - **Top Contributing Regions**: Which U.S. cities or states contribute the most to AI-related open-source projects?
 - **Role of Economic Development and Higher Education**: How does economic development or the density of higher education institutions explain these geographic patterns?
 - **Comparison with AI Industry Clustering**: Is AI open-source development more geographically decentralized compared to AI companies and R&D centers?
+## Files Illustration
+- Data Collection: The complete code and output for data scraping
+- Data Cleaning: The complete code and output for data cleaning and wrangling, based on city and country level according to our research
+- Data Visualization: In progress
+- Data Analysis: In progress
 ## Team Member
 - Charlotte Li
-- Baihui Wang
+- Baihui Wang 
 - Anqi Wei
 ## Data
 - [GitHub (AI Repositories)](https://github.com/topics/ai): Data on repositories tagged with "AI," sorted by the number of stars, including public user profile information with location fields. We will use the top 100 most-starred repositories, covering approximately 1,514 contributors and their locations.
