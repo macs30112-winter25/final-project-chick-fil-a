@@ -213,8 +213,8 @@ def clean_city(city):
 city_file['City_English_Cleaned'] = city_file['City_English'].apply(clean_city)
 
 # Attention: 
-## There might be some errors in the translation process, manually check are needed.
-## the cleaning process is not perfect, we may need impoove it in the final step.
+## There might be some errors in the translation process; manually checks are needed.
+## The cleaning process is not perfect; we improved it in the final step.
 
 city_file.to_csv("refined_city_2.csv", index=False)
 
@@ -271,7 +271,6 @@ def standardize_country(country):
         
     return None  
 
-
 country_file['Country_Standardized'] = country_file['Country_English'].apply(standardize_country)
 
 country_file.to_csv(file_path, index=False)
@@ -284,10 +283,9 @@ print(non_null_countries[['Country_English', 'Country_Standardized']].head(20))
 print(f"\nTotal non-null standardized countries: {len(non_null_countries)}")
 
 ## Attention:
-## The standardization process is not perfect, we may need to improve it in the final step.
+## The standardization process is not perfect; we improve it in the final step.
 
 # Merge the same country data, and recalculate the indicators
-
 merged_country = country_file .groupby("Country_Standardized", as_index=False).agg({
     "total_contributors": "sum",
     "total_stars": "sum"
@@ -308,4 +306,68 @@ print("---"*30)
 print("The top 20 countries with the highest average stars per contributor:")
 print(merged_country.sort_values("avg_stars_per_contributor", ascending=False).head(20))
 
+# Manually Checking
+# Display unique values in the 'Country_Standardized' column to identify non-country entries
+country_file = "country_data_3.csv"
 
+country_3 = pd.read_csv(country_file, on_bad_lines='skip')
+unique_values = country_3["Country_Standardized"].unique()
+
+# Display a sample of unique values
+print(unique_values)
+
+# Define a mapping of non-sovereign entities to their corresponding sovereign country names
+territory_to_country = {
+    "American Samoa": "United States",
+    "Anguilla": "United Kingdom",
+    "Aruba": "Netherlands",
+    "British Indian Ocean Territory": "United Kingdom",
+    "Cayman Islands": "United Kingdom",
+    "Cook Islands": "New Zealand",
+    "Faroe Islands": "Denmark",
+    "Gibraltar": "United Kingdom",
+    "Greenland": "Denmark",
+    "Guam": "United States",
+    "Holy See (Vatican City State)": "Vatican City",
+    "Isle of Man": "United Kingdom",
+    "Moldova, Republic of": "Moldova",
+    "Montserrat": "United Kingdom",
+    "New Caledonia": "France",
+    "Northern Mariana Islands": "United States",
+    "Puerto Rico": "United States",
+    "Réunion": "France",
+    "Saint Barthélemy": "France",
+    "Saint Helena, Ascension and Tristan da Cunha": "United Kingdom",
+    "Korea, Republic of": "South Korea",
+    "Turks and Caicos Islands": "United Kingdom",
+    "Åland Islands": "Finland",
+    "Russian Federation": "Russia",
+    "Türkiye": "Turkey",
+    "Lao People's Democratic Republic": "Laos",
+    "Moldova, Republic of": "Moldova"
+}
+
+# Replace non-sovereign entities with their respective country names
+country_3["Country_Standardized"] = country_3["Country_Standardized"].replace(territory_to_country)
+
+
+
+# Use the existing 'country' DataFrame
+country_list = country_3.groupby("Country_Standardized", as_index=False).agg({
+    "total_contributors": "sum",
+    "total_stars": "sum",
+    "avg_stars_per_contributor": "mean"  
+})
+
+# Recalculate avg_stars_per_contributor
+country_list ["avg_stars_per_contributor"] = country_list ["total_stars"] / country_list ["total_contributors"]
+
+print(country_list.head())
+
+# Save the cleaned country data
+country_list.to_csv("country_data_3.csv", index=False)
+
+unique_values = country_3["Country_Standardized"].unique()
+
+# Display a sample of unique values
+print(unique_values)
