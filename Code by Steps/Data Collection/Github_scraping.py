@@ -149,7 +149,7 @@ def main():
             contributor_data.append([repo_full_name, stars, username, location, profile_url])
 
     # Save contributor data
-    with open("github_contributor_locations.csv", "w", newline="", encoding="utf-8") as file:
+    with open("contributors_locations.csv", "w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         writer.writerow(["Repository", "Stars", "Contributor", "Location", "Profile URL"])
         writer.writerows(contributor_data)
