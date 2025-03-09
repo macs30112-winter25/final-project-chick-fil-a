@@ -48,7 +48,7 @@ For easier navigation and execution, we recommend reviewing *Code by Steps* fold
 - google-api-python-client==2.104.0
 
 ## Presention & Illustration
-- [Original Presentation]()
+- [Original Presentation](https://github.com/macs30112-winter25/final-project-chick-fil-a/blob/3431ec98d10c2042a8730fef0bcb82da1ba1a9e5/Project%20report/Original%20Slides.pdf)
 - [Updated Presentation]()
 - [Video Illustration]()
 
