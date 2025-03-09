@@ -1,4 +1,4 @@
-# The Spatial Distribution of Open-Source AI: Regional Patterns of Innovation and Participation in the U.S. - Group Chick-Fil-A
+# Global Spatial Distribution Of Open-Source Artificial Intelligence - Group Chick-Fil-A
 
 ## Team Member
 - Charlotte Li
