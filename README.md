@@ -50,9 +50,9 @@ For easier navigation and execution, we recommend reviewing *Code by Steps* fold
 ## Presention & Illustration
 - [Original Presentation](https://github.com/macs30112-winter25/final-project-chick-fil-a/blob/3431ec98d10c2042a8730fef0bcb82da1ba1a9e5/Project%20report/Original%20Slides.pdf)
 - [Updated Presentation]()
-- [Video Illustration]()
+- [Video Illustration](https://drive.google.com/file/d/1DYlvbbOr0yDNUHhSNlcY_oGL9oRAKPWN/view?usp=sharing)
 
 ## Responsibility
-- Charlotte Li: Develop and execute the GitHub data scraping script, including API access, repository information collection, and user location data extraction.
-- Baihui Wang: Assist in data scraping, perform data cleaning and deduplication, aggregate macroeconomic data, and standardize geographic names. Contribute to geocoding, data visualization and interactive map creation.
-- Anqi Wei: Support data scraping and cleaning, conduct regression analysis and correlation testing, and create visualizations, including mapping AI activity distributions.
+- Charlotte Li: Develop and execute the GitHub data scraping script, including API access, repository information collection, and user location data extraction, revise PowerPoint slides incorporating feedback.
+- Baihui Wang: Assist in data scraping, perform data cleaning and deduplication, aggregate macroeconomic data, and standardize geographic names. Contribute to geocoding, data visualization and interactive map creation, record instructional video introducing GitHub page features
+- Anqi Wei: Support data scraping and cleaning, conduct regression analysis and correlation testing, and create visualizations, including mapping AI activity distributions, reorganize GitHub repository page, update README documentation
