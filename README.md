@@ -49,7 +49,7 @@ For easier navigation and execution, we recommend reviewing *Code by Steps* fold
 
 ## Presention & Illustration
 - [Original Presentation](https://github.com/macs30112-winter25/final-project-chick-fil-a/blob/3431ec98d10c2042a8730fef0bcb82da1ba1a9e5/Project%20report/Original%20Slides.pdf)
-- [Updated Presentation]()
+- [Updated Presentation](https://github.com/macs30112-winter25/final-project-chick-fil-a/blob/7d3e911cd9c486bd9f41423dc1c856e7285a47ad/Project%20report/Updated%20Slides.pdf)
 - [Video Illustration](https://drive.google.com/file/d/1DYlvbbOr0yDNUHhSNlcY_oGL9oRAKPWN/view?usp=sharing)
 
 ## Responsibility
